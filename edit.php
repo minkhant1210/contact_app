@@ -12,6 +12,7 @@ require_once "core/function.php";
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="asset/bootstrap-4.5.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="asset/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
     <title>Contacts app</title>
     <style>
         img{
@@ -129,8 +130,14 @@ require_once "core/function.php";
         </div>
     </div>
 </div>
-<?php clearError(); ?>
-<link rel="stylesheet" href="asset/jquery-3.3.1.min.js">
-<link rel="stylesheet" href="asset/bootstrap-4.5.3-dist/js/bootstrap.min.js">
+
+<script src="asset/jquery-3.3.1.min.js"></script>
+<script src="asset/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+<script src="//cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready( function () {
+        $('.table').DataTable();
+    } );
+</script>
 </body>
 </html>
